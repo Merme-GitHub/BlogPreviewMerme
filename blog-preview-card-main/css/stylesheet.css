@@ -1,0 +1,114 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    flex-wrap: wrap;
+}
+/* Box */
+.box {
+    background-color: white;
+    border-radius: 20px;
+    width: 340px;
+    margin: 0 auto;
+    padding: 20px;
+    border: black solid 0.5px;
+    box-shadow: 6px 6px 0px black;
+}
+@media (min-width:380px) {
+    .box {
+        width: 375px;
+    }
+}
+.image > img {
+    width: 100%;
+    border-radius: 20px;
+}
+.label {
+    display: block;
+    background-color: hsl(47, 88%, 63%);
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 170px;
+    margin-top: 15px;
+    transition: background-color 50ms ease 0ms;
+}
+.label:hover {
+    background-color: hsl(47, 53%, 50%);
+    cursor: pointer;
+}
+.label > p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.date {
+    margin-bottom: 0px;
+}
+.date > p:hover {
+    text-decoration: underline;
+}
+.title {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: color 0.1s ease 0s;
+}
+.title > p{
+    margin-bottom: 0;
+}
+.title:hover{
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+@media (min-width:380px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+.text {
+    line-height: 1.5;
+    margin-top: 0px;
+}
+.text > p {
+    color: hsl(0, 0%, 50%);
+    font-size: 16px;
+    transition: all .5s ease 0s;
+
+}
+.text > p:hover {
+    font-size: 20px;
+    color: black;
+}
+.user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 800;
+}
+.user > p:hover {
+    text-decoration: underline;
+}
+.user > img {
+    border: 2px solid black;
+    border-radius: 50%;
+}
+/* Footer */
+footer {
+    padding-top: 200px;
+    order: 1;
+}
